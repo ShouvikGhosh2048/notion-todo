@@ -12,7 +12,7 @@ npm install
 2. Create a `.env` file in the root directory with the following variables:
 ```
 NOTION_API_KEY=your_notion_api_key_here
-NOTION_DATABASE_ID=your_database_id_here
+NOTION_PAGE_ID=your_page_id_here
 ```
 
 To get these values:
