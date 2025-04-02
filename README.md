@@ -1,6 +1,6 @@
-# Notion Todo List Manager
+# notion-todo
 
-A program to maintain todolists in Notion.
+A program to maintain todolists in Notion. Built with cursor.
 
 ## Setup
 
