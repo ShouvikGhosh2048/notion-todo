@@ -1,6 +1,6 @@
 {
   "crons": [{
     "path": "/api/notion-todo",
-    "schedule": "0 1 * * *"
+    "schedule": "0 19 * * *"
   }]
 } 

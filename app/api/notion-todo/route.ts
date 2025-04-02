@@ -36,7 +36,7 @@ export async function GET(request: Request) {
     const latestPageTitle = (latestPage.properties.Name.title as Array<{ text: { content: string } }>)[0].text.content;
 
     let pageId = latestPage.id;
-    const currentDate = new Date();
+    const currentDate = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }));
     const monthYear = currentDate.toLocaleString('en-US', { month: 'long', year: 'numeric' });
     if (monthYear !== latestPageTitle) {
       const newPage = await notion.pages.create({
