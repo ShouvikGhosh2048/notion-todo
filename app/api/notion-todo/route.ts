@@ -8,7 +8,7 @@ const notion = new Client({
 });
 
 // Example usage
-async function main() {
+export async function GET(request: Request) {
   try {
     const blocks = await notion.blocks.children.list({
       block_id: process.env.NOTION_PAGE_ID!,
@@ -98,9 +98,9 @@ async function main() {
         }))
       ]
     });
+
+    return Response.json({ success: true });
   } catch (error) {
     console.error('Failed:', error);
   }
 }
-
-main();
